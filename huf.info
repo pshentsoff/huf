@@ -1,0 +1,7 @@
+name        = HUF
+description = "Helpful Utilities & Functions"
+core        = 7.x
+php         = 5.2
+version     = "7.x-1.0.2"
+files[]     = huf.install
+files[]     = huf.module
