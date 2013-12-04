@@ -202,4 +202,13 @@ function huf_next_months_date($months, $begin_month = NULL, $begin_year = NULL) 
     } 
   
   return huf_fix_date($end_day, $end_month, $end_year);
-} 
+}
+
+function huf_bool2int($bool_str) {
+    $bool_str = strtolower($bool_str);
+    return ($bool_str == 'true' ? 1 : 0);
+}
+
+function huf_int2bool($bool_int) {
+    return ($bool_int == 0 ? 'false' : 'true');
+}
