@@ -13,8 +13,11 @@ Helpful Utilities &amp; Functions (HUF) module for Drupal
 
 == Changelog ==
 
+= 7.x-1.0.4 =
+-   'yes' is the same as 'true'
+
 = 7.x-1.0.3 =
-    - huf_bool2int(), huf_int2bool()
+-   huf_bool2int(), huf_int2bool()
 
 = 7.x-1.0.2 =
   - huf_next_months_date()
