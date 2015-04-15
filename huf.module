@@ -212,3 +212,17 @@ function huf_bool2int($bool_str) {
 function huf_int2bool($bool_int) {
     return ($bool_int == 0 ? 'false' : 'true');
 }
+
+/**
+ * Function trim string to count symbols by words
+ * @param string $output string to trim
+ * @param int $trim_to symbols count
+ * @return string
+ */
+function huf_trimmer($output, $trim_to = 200) {
+  $result = '';
+  if (preg_match('#(^.{0,'.$trim_to.'})(?:\s|\z|\Z)#', $output, $matches) !== FALSE && !empty($matches) && isset($matches[1])) {
+    $result = $matches[1] . (mb_strlen($matches[1]) < mb_strlen($output) ? '...' : '');
+  }
+  return $result;
+}
